@@ -1,0 +1,57 @@
+[
+  {
+    "imagePath": "./images/behind.gif",
+    "description": "behind",
+    "active": true
+  },
+  {
+    "imagePath": "./images/between.gif",
+    "description": "between",
+    "active": true
+  },
+  {
+    "imagePath": "./images/in.gif",
+    "description": "in",
+    "active": true
+  },
+  {
+    "imagePath": "./images/in_front_of.gif",
+    "description": "in front of",
+    "active": true
+  },
+  {
+    "imagePath": "./images/in_the_middle.gif",
+    "description": "in the middle",
+    "active": true
+  },
+  {
+    "imagePath": "./images/next_to.gif",
+    "description": "next to",
+    "active": true
+  },
+  {
+    "imagePath": "./images/on.gif",
+    "description": "on",
+    "active": true
+  },
+  {
+    "imagePath": "./images/on_the_left.gif",
+    "description": "on the left",
+    "active": true
+  },
+  {
+    "imagePath": "./images/on_the_right.gif",
+    "description": "on the right",
+    "active": true
+  },
+  {
+    "imagePath": "./images/opposite.gif",
+    "description": "opposite",
+    "active": true
+  },
+  {
+    "imagePath": "./images/under.gif",
+    "description": "under",
+    "active": true
+  }
+]
