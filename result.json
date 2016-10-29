@@ -1,57 +1,57 @@
 [
   {
-    "imagePath": "./imagesbehind.gif",
-    "description": "change me",
+    "imagePath": "./images/behind.gif",
+    "description": "behind",
     "active": true
   },
   {
-    "imagePath": "./imagesbetween.gif",
-    "description": "change me",
+    "imagePath": "./images/between.gif",
+    "description": "between",
     "active": true
   },
   {
-    "imagePath": "./imagesin.gif",
-    "description": "change me",
+    "imagePath": "./images/in.gif",
+    "description": "in",
     "active": true
   },
   {
-    "imagePath": "./imagesin_front_of.gif",
-    "description": "change me",
+    "imagePath": "./images/in_front_of.gif",
+    "description": "in front of",
     "active": true
   },
   {
-    "imagePath": "./imagesin_the_middle.gif",
-    "description": "change me",
+    "imagePath": "./images/in_the_middle.gif",
+    "description": "in the middle",
     "active": true
   },
   {
-    "imagePath": "./imagesnext_to.gif",
-    "description": "change me",
+    "imagePath": "./images/next_to.gif",
+    "description": "next to",
     "active": true
   },
   {
-    "imagePath": "./imageson.gif",
-    "description": "change me",
+    "imagePath": "./images/on.gif",
+    "description": "on",
     "active": true
   },
   {
-    "imagePath": "./imageson_the_left.gif",
-    "description": "change me",
+    "imagePath": "./images/on_the_left.gif",
+    "description": "on the left",
     "active": true
   },
   {
-    "imagePath": "./imageson_the_right.gif",
-    "description": "change me",
+    "imagePath": "./images/on_the_right.gif",
+    "description": "on the right",
     "active": true
   },
   {
-    "imagePath": "./imagesopposite.gif",
-    "description": "change me",
+    "imagePath": "./images/opposite.gif",
+    "description": "opposite",
     "active": true
   },
   {
-    "imagePath": "./imagesunder.gif",
-    "description": "change me",
+    "imagePath": "./images/under.gif",
+    "description": "under",
     "active": true
   }
 ]

@@ -7,9 +7,10 @@ fs.saveJSON = function(what) {
 var result = fs.readdirSync('./app/images/').filter(function (item) {
     return item != 'yeoman.png';
 }).map(function(item) {
+
     return {
-        'imagePath' : './images' + item,
-        'description' : 'change me', 
+        'imagePath' : './images/' + item,
+        'description' : item.replace(/\.gif$/,'').split("_").join(" "), 
         'active': true 
     }
 });
