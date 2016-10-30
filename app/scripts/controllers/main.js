@@ -11,12 +11,18 @@ angular.module('prepositionsApp')
   .controller('MainCtrl', function ($http, $scope) {
     $scope.prepositions = null;
     $scope.displayedItemsCount = 0;
-    $http.get('./data/result.json').then(function(result) {
+    $scope.initPrepositions = function () {
+      $http.get('./data/result.json').then(function (result) {
         $scope.prepositions = result.data;
-    });
-    $scope.selectHandler = function(allpreposition, currentPreposition) {
-      if(allpreposition.description && currentPreposition.description && allpreposition.description === currentPreposition.description) {
-          currentPreposition.active = false;
-      }
+      });
     }
+    $scope.selectHandler = function (currentPreposition, selectedPreposition) {
+      if (!currentPreposition || currentPreposition.description !== selectedPreposition.description) {
+        return;
+      }
+      $scope.prepositions = $scope.prepositions.filter(function (item) {
+        return item.description !== currentPreposition.description;
+      });
+    }
+    $scope.initPrepositions();
   });

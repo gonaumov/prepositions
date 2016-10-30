@@ -81,3 +81,8 @@ body {
     border-bottom: 0;
   }
 }
+
+.btn-primary {
+  clear: both;
+  margin-top: 20px;
+}
