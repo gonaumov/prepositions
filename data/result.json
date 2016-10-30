@@ -1,0 +1,57 @@
+[
+  {
+    "imagePath": "./images/behind.24e1baff.gif",
+    "description": "behind",
+    "active": true
+  },
+  {
+    "imagePath": "./images/between.115ab7aa.gif",
+    "description": "between",
+    "active": true
+  },
+  {
+    "imagePath": "./images/in.ec29bbfe.gif",
+    "description": "in",
+    "active": true
+  },
+  {
+    "imagePath": "./images/in_front_of.3763c41b.gif",
+    "description": "in front of",
+    "active": true
+  },
+  {
+    "imagePath": "./images/in_the_middle.86e20a49.gif",
+    "description": "in the middle",
+    "active": true
+  },
+  {
+    "imagePath": "./images/next_to.65c158e6.gif",
+    "description": "next to",
+    "active": true
+  },
+  {
+    "imagePath": "./images/on.3c32faa3.gif",
+    "description": "on",
+    "active": true
+  },
+  {
+    "imagePath": "./images/on_the_left.83445c00.gif",
+    "description": "on the left",
+    "active": true
+  },
+  {
+    "imagePath": "./images/on_the_right.d5101b8a.gif",
+    "description": "on the right",
+    "active": true
+  },
+  {
+    "imagePath": "./images/opposite.9fd8f075.gif",
+    "description": "opposite",
+    "active": true
+  },
+  {
+    "imagePath": "./images/under.a3500c76.gif",
+    "description": "under",
+    "active": true
+  }
+]
