@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h2>Select the word in the selects that matched best picture from the left side.</h2>
+  <h2>Select the word in the selects that matches the best picture from the left side.</h2>
 </div>
 
 <div class="row marketing">
@@ -16,10 +16,13 @@
         <select data-ng-model="selectedPreposition" data-ng-change="selectHandler(currentPreposition,selectedPreposition);hide=true" data-ng-options="preposition.description for preposition in prepositions">
           <option value="" data-ng-hide="hide">-- Please select --</option>
         </select>
+        <div class="alert alert-danger" role="alert" data-ng-show="currentPreposition.error">
+          Error! Please choose another meaning.
+        </div>
       </div>
     </div>
     <div class="container" data-ng-show="prepositions.length === 0">
-        Congratulations! You finish the exercise. You can start again if you want. 
+        Congratulations! You finished the exercise. You can start again if you want. 
         <br/>
         <button type="button" data-ng-click="initPrepositions()" class="btn btn-primary">Start test again</button>
     </div>

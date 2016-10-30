@@ -19,8 +19,10 @@ angular.module('prepositionsApp')
     }
     $scope.selectHandler = function (currentPreposition, selectedPreposition) {
       if (!currentPreposition || currentPreposition.description !== selectedPreposition.description) {
+        currentPreposition.error = true;
         return;
       }
+
       $scope.prepositions = $scope.prepositions.filter(function (item) {
         return item.description !== currentPreposition.description;
       });
