@@ -32,7 +32,7 @@ angular.module('prepositionsApp')
     }
 
     $scope.initPrepositions();
-    
+
     function MessageDialog(isError) {
       return $uibModal.open({
         animation: true,
@@ -45,6 +45,9 @@ angular.module('prepositionsApp')
         resolve: {
           'isError': function() {
             return isError;
+          },
+          'prepositions': function() {
+            return $scope.prepositions;
           }
         }
       }).result;

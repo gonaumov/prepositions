@@ -11,9 +11,12 @@
         This answer is incorrect! 
         Please choose another option. 
     </p>
-    <p data-ng-if="!$resolve.isError">
+    <p data-ng-if="!$resolve.isError && $resolve.prepositions.length > 1">
         Congratulations. This is the correct 
         answer. You can continue to other pictures. 
+    </p>
+    <p data-ng-if="!$resolve.isError && $resolve.prepositions.length === 1">
+        This is the correct answer! 
     </p>
 </div>
 <div class="modal-footer">
