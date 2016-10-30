@@ -79,7 +79,7 @@ module.exports = function (grunt) {
         options: {
           open: true,
           middleware: function (connect) {
-            return [
+          return [
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
@@ -258,11 +258,13 @@ module.exports = function (grunt) {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
+      json:['<%= yeoman.dist %>/data/{,*/}*.json'],
       options: {
         assetsDirs: [
           '<%= yeoman.dist %>',
           '<%= yeoman.dist %>/images',
-          '<%= yeoman.dist %>/styles'
+          '<%= yeoman.dist %>/styles',
+          '<%= yeoman.dist %>/data',
         ],
         patterns: {
           js: [[/(images\/[^''""]*\.(png|jpg|jpeg|gif|webp|svg))/g, 'Replacing references to images']]
@@ -372,6 +374,11 @@ module.exports = function (grunt) {
     copy: {
       dist: {
         files: [{
+          expand: true, 
+          cwd: '<%= yeoman.app %>/data', 
+          src: ['**'], 
+          dest: '<%= yeoman.dist %>/data'
+        }, {
           expand: true,
           dot: true,
           cwd: '<%= yeoman.app %>',
