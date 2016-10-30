@@ -1,22 +1,26 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
+  <h1>Just simple English position exercise.</h1>
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+       
   </p>
   <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
 <div class="row marketing">
-  <div>
-    <span data-ng-repeat="preposition in prepositions | filter:{active:true}">
+   <ul class="list-inline">
+    <li class="list-group-item" data-ng-repeat="preposition in prepositions | filter:{active:true}">
       {{preposition.description}}
-    </span>
-  </div>
+    </li>
+  </ul>
   <div>
     <div data-ng-repeat="preposition in prepositions | filter:{active:true}">
-      <img data-ng-src="{{preposition.imagePath}}"/>
-      <select data-ng-model="allpreposition" data-ng-change="selectHandler(allpreposition,preposition)" data-ng-options="preposition.description for preposition in prepositions  | filter:{active:true}"></select>
+      <div class="clearfix" data-ng-if="$index % 4 == 0"></div>
+      <div class="col-md-3 col-sm-3">
+        <img data-ng-src="{{preposition.imagePath}}"/>
+        <select data-ng-model="allpreposition" data-ng-change="selectHandler(allpreposition,preposition);hide=true" data-ng-options="preposition.description for preposition in prepositions  | filter:{active:true}">
+          <option value="" data-ng-init="itemsCount=itemsCount+1" data-ng-hide="hide">-- Please select --</option>
+        </select>
+      </div>
     </div>
   </div>
 </div>
