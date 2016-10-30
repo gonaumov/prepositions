@@ -86,3 +86,10 @@ body {
   clear: both;
   margin-top: 20px;
 }
+
+.modal {
+    position: fixed;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

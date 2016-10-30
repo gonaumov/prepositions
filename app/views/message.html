@@ -1,0 +1,21 @@
+<div class="modal-header">
+	<h3 data-ng-if="$resolve.isError" class="modal-title" id="modal-title">
+        Incorrect answer
+    </h3>
+    <h3 data-ng-if="!$resolve.isError" class="modal-title" id="modal-title">
+        Correct answer
+    </h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <p data-ng-if="$resolve.isError">
+        This answer is incorrect! 
+        Please choose another option. 
+    </p>
+    <p data-ng-if="!$resolve.isError">
+        Congratulations. This is the correct 
+        answer. You can continue to other pictures. 
+    </p>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+</div>
