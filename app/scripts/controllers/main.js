@@ -11,6 +11,7 @@ angular.module('prepositionsApp')
   .controller('MainCtrl', function ($http, $scope) {
     $scope.prepositions = null;
     $scope.displayedItemsCount = 0;
+    $scope.activeCtrl = 'MainCtrl';
     $scope.initPrepositions = function () {
       $http.get('./data/result.json').then(function (result) {
         $scope.prepositions = result.data;

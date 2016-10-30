@@ -8,10 +8,6 @@
  * Controller of the prepositionsApp
  */
 angular.module('prepositionsApp')
-  .controller('AboutCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('AboutCtrl', function ($scope) {
+    $scope.activeCtrl = 'AboutCtrl';
   });

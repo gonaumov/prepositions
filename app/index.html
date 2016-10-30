@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="prepositionsApp">
+  <body ng-app="prepositionsApp"  data-ng-controller="RootCtrl">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -37,9 +37,8 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
+              <li data-ng-class="{'active': $route.current.scope.activeCtrl==='MainCtrl'}"><a href="#/">Home</a></li>
+              <li data-ng-class="{'active': $route.current.scope.activeCtrl==='AboutCtrl'}"><a ng-href="#/about">About</a></li>
             </ul>
           </div>
         </div>
@@ -72,6 +71,7 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/root.js"></script>
         <!-- endbuild -->
 </body>
 </html>
